@@ -73,14 +73,14 @@ footer{
     flex: 1;    /* Empuja el footer hacia abajo, así junto con lo que he hecho en el body tengo el footer siempre abajo */
 }
 
-/*  */
-
+/* Hero */
 #hero{
     text-align: center;
     align-items: center;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin: 40px 0 20px;
 }
 
 .botonverdados{
@@ -104,3 +104,4 @@ footer{
     border-color: rgb(196, 0, 0);
     background-color: rgb(255, 54, 54);
 }
+/*------*/
