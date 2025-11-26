@@ -1,6 +1,9 @@
 body{
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;  /* Ocupa toda la altura de la ventana */
     /* Primera fuente: Rammetto One */
     font-family: "TASA Orbiter", sans-serif;
     font-optical-sizing: auto;
@@ -34,7 +37,7 @@ nav{
     position: sticky;
     top: 0;
     background-color: rgba(255, 165, 165, 0.671);
-    backdrop-filter: blur(20px); /* difuminación del fondo semitransparente */
+    backdrop-filter: blur(20px); /* Difuminación del fondo semitransparente */
     padding: 1% 3%;
     display: flex;
     gap: 3%;
@@ -49,3 +52,20 @@ nav{
     width: 3%;
     height: auto;
 }
+/*--------*/
+
+/* Footer */
+footer{
+    text-align: center;
+    font-size: large;
+    color: white;
+    background-color: rgb(77, 9, 0);
+    padding: 2%;
+}
+/*--------*/
+
+#contenidopag{
+    flex: 1;    /* Empuja el footer hacia abajo, así junto con lo que he hecho en el body tengo el footer siempre abajo */
+}
+
+/*  */
