@@ -14,6 +14,7 @@ body{
 
 /* Segunda fuente: TASA Orbiter */
 h1, h2, h3{
+    color: rgb(54, 0, 0);
     font-family: "Rammetto One", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -22,14 +23,6 @@ h1, h2, h3{
 
 a{
     text-decoration: none;
-    color: rgb(71, 0, 0);
-    display: flex;
-    align-items: center;
-    gap: 7px;
-}
-
-a:hover{
-    color: rgb(196, 0, 0);
 }
 
 /* Navbar */
@@ -52,6 +45,18 @@ nav{
     width: 3%;
     height: auto;
 }
+
+.opcionmenu{
+    text-decoration: none;
+    color: rgb(71, 0, 0);
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.opcionmenu:hover{
+    color: rgb(196, 0, 0);
+}
 /*--------*/
 
 /* Footer */
@@ -69,3 +74,33 @@ footer{
 }
 
 /*  */
+
+#hero{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.botonverdados{
+    border-color: rgb(71, 0, 0);
+    padding: 10px 50px;
+    background-color: rgb(255, 91, 91);
+    cursor: pointer;
+    border-radius: 13px;
+    color: rgb(71, 0, 0);
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-family: "TASA Orbiter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.botonverdados:hover{
+    color: rgb(196, 0, 0);
+    border-color: rgb(196, 0, 0);
+    background-color: rgb(255, 54, 54);
+}
