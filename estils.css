@@ -277,7 +277,7 @@ footer{
 }
 /*--------*/
 
-/* Cosa animada principal */
+/* Pieza animada principal */
 .partepiezaanimada{
     margin: 0 0 5%;
     overflow: hidden;
@@ -298,13 +298,13 @@ footer{
 }
 
 .textopiezaanimada{
-    animation: textopiezaanimada 2.5s ease-in-out infinite;
+    animation: textopiezaanimada 2.5s ease-in-out infinite alternate;
 }
 
 @keyframes textopiezaanimada {
     0%   { color: white; }
-    50%  { color: rgb(255, 101, 101); }
-    100% { color: white; }
+    50%  { color: rgb(255, 83, 83); }
+    100% { color: rgb(105, 0, 0); }
 }
-
 /*------------------------*/
+
