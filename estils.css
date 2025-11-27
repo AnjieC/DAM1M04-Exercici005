@@ -250,7 +250,7 @@ footer{
 .parteloader{
     display: flex;
     justify-content: center;
-    margin: 4% 0;
+    margin: 4% 0 0;
     align-items: center;
     gap: 30px;
 }
@@ -262,7 +262,7 @@ footer{
     border-left-color: rgb(196, 0, 0);
     border-right-color: rgb(196, 0, 0);
     border-radius: 50%;
-    animation: girar 1.4s ease-in-out infinite;
+    animation: girar 1.4s linear infinite;
 }
 
 .loader img{
@@ -271,18 +271,40 @@ footer{
 }
 
 @keyframes girar {
-    to {transform: rotate(360deg); }
+    0%   { transform: rotate(0deg); }
+    50%  { transform: rotate(180deg); }
+    100% { transform: rotate(360deg); }
 }
 /*--------*/
 
 /* Cosa animada principal */
 .partepiezaanimada{
-    margin: 10% 0;
+    margin: 0 0 5%;
+    overflow: hidden;
+    padding: 10% 0;
 }
 
 .piezaanimada{
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: piezaanimada 2.5s ease-in-out infinite;
 }
+
+@keyframes piezaanimada {
+    0%   { transform: scale(1); opacity: 1; }
+    50%  { transform: scale(2); opacity: 0.6; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.textopiezaanimada{
+    animation: textopiezaanimada 2.5s ease-in-out infinite;
+}
+
+@keyframes textopiezaanimada {
+    0%   { color: white; }
+    50%  { color: rgb(255, 101, 101); }
+    100% { color: white; }
+}
+
 /*------------------------*/
