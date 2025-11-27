@@ -53,10 +53,19 @@ nav{
     display: flex;
     align-items: center;
     gap: 7px;
+    padding: 5px;
 }
 
 .opcionmenu:hover{
     color: rgb(196, 0, 0);
+}
+
+#opcionmenuactual{
+    border-bottom: 2px solid rgb(71, 0, 0);
+}
+
+#opcionmenuactual:hover{
+    border-bottom: 2px solid rgb(196, 0, 0);
 }
 /*--------*/
 
@@ -98,12 +107,14 @@ footer{
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    transition: transform 0.1s linear;
 }
 
 .botonverdados:hover{
     color: rgb(196, 0, 0);
     border-color: rgb(196, 0, 0);
     background-color: rgb(255, 54, 54);
+    transform: scale(1.05);
 }
 /*------*/
 
@@ -111,23 +122,25 @@ footer{
 .tarjetas {
     display: flex;
     justify-content: center;
-    padding: 3% 0 7%;
+    padding: 3%;
+    gap: 7%;
 }
+/* Lo que tendra todas las cartas */
 
+/* Estado de carta normal */
 .carta {
     position: relative;
     width: 20%;
     border-radius: 12px;
     border: 10px solid rgb(255, 185, 185);
     background-color: rgb(255, 185, 185);
-    transition: transform 0.4s, box-shadow 0.4s, background-color 0.4s;
 }
 
 /* Hover: escala, sombra y cambio de color */
 .carta:hover {
     transform: scale(1.05);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.445);
-    background-color: rgb(165, 12, 12); /* color de hover */
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.445);
+    background-color: rgb(165, 12, 12);
     border: 10px solid rgb(165, 12, 12);
 }
 
@@ -163,3 +176,22 @@ footer{
 .carta:hover .dado-hover {
   opacity: 1;
 }
+/*--------------------------------*/
+
+/* Especifico cada transicion de cada carta */
+
+/* Carta 1 */
+#carta1{
+    transition: transform 0.7s ease, box-shadow 0.7s ease;
+}
+
+/* Carta 2 */
+#carta2{
+    transition: transform 0.7s ease-in, box-shadow 0.7s ease-in;
+}
+
+/* Carta 3 */
+#carta3{
+    transition: transform 0.7s linear, box-shadow 0.7s linear;
+}
+/*------------------------------------------*/
