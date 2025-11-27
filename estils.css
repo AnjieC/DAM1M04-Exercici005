@@ -159,7 +159,7 @@ footer{
     display: block;
 }
 
-/* Imagen base visible siempre */
+/* Imagen base inicialmente visible */
 .dado-base {
     opacity: 1;
     transition: opacity 0.6s;
@@ -178,7 +178,7 @@ footer{
     transition: opacity 0.4s;
 }
 
-/* Cambio de foto al hover */
+/* Cambio de foto al hover, ocultar la base y mostrar la otra */
 .carta:hover .dado-base {
   opacity: 0;
 }
@@ -232,13 +232,19 @@ footer{
 /*-----------------*/
 
 /* Loader */
+.parteloader{
+    display: flex;
+    justify-content: center;
+    margin: 6% 0;
+}
+
 .loader{
-    width: 100px;
-    height: 100px;
-    border: 10px solid #ccc;
+    width: 130px;
+    height: 130px;
+    border: 13px solid #ccc;
     border-top-color: rgb(196, 0, 0);
     border-radius: 50%;
-    animation: girar 1s linear infinite;
+    animation: girar 1.4s linear infinite;
 }
 
 
