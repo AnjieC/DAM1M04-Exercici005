@@ -242,7 +242,7 @@ footer{
 }
 /*------------------*/
 
-#fondodados h1, h2, h3{
+#fondodados h1{
     color: white;
 }
 
@@ -308,3 +308,39 @@ footer{
 }
 /*------------------------*/
 
+/* Bloques scroll */
+.bloquesscroll{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 17px;
+    margin-bottom: 7%;
+}
+
+.bloquesscroll img{
+    width: 60%;
+    opacity: 0;
+    transform: translateY(50px);
+    animation-name: animacionscroll;
+    animation-duration: 1s;
+    animation-timeline: view(); /* El progreso de la animación depende de si el bloque esta dentro del viewport */
+    animation-range: 0% 70%;   /* Cuando empieza y termina la animación segun la posición del bloque dentro de la pantalla */
+    animation-fill-mode: both;  /* Mantener estado final */
+}
+
+@keyframes animacionscroll {
+    from {opacity: 0; transform: translateY(100px); }
+    to {opacity: 1; transform: translateY(0); }
+}
+
+/* Fallback obligatori */
+@supports not (animation-timeline: view()) {
+  .bloquesscroll img {opacity: 0; animation: fadeIn 1s ease forwards; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(100px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+/*----------------*/
