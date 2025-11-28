@@ -356,35 +356,71 @@ footer{
 
 .apartado{
     border-bottom: 2px solid rgb(54, 0, 0);
+    font-size: 2rem;
 }
 
 .tt1{
     font-weight: bold;
     line-height: 400%;
     letter-spacing: 10px;
+    font-size: 2.5rem;
 }
 
 .tt2{
     font-weight: lighter;
     line-height: 300%;
     letter-spacing: 7px;
+    font-size: 2rem;
 }
 
 .tt3{
     font-weight: normal;
     line-height: 250%;
     letter-spacing: 6px;
+    font-size: 1.5rem;
 }
 
 .ttp{
     font-weight: normal;
     line-height: 200%;
     letter-spacing: 4px;
+    font-size: 1rem;
 }
 
 .alinear{
     display: flex;
     align-items: center;
+    font-size: 1rem;
+}
+/*------------*/
+
+/* Material icons botones y links */
+.materialiconboton{
+    display: flex;
+    justify-content: center;    
 }
 
-/*------------*/
+.boton1{
+    border-color: rgb(71, 0, 0);
+    padding: 10px 50px;
+    background-color: rgb(255, 91, 91);
+    cursor: pointer;
+    border-radius: 13px;
+    color: rgb(71, 0, 0);
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-family: "TASA Orbiter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    transition: transform 0.1s linear;
+}
+
+.boton1:hover{
+    color: rgb(196, 0, 0);
+    border-color: rgb(196, 0, 0);
+    background-color: rgb(255, 54, 54);
+    transform: scale(1.05);
+}
+/*--------------------------------*/
