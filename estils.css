@@ -293,7 +293,7 @@ footer{
 
 @keyframes piezaanimada {
     0%   { transform: scale(1); opacity: 1; }
-    50%  { transform: scale(2); opacity: 0.6; }
+    50%  { transform: scale(2.5); opacity: 0.6; }
     100% { transform: scale(1); opacity: 1; }
 }
 
@@ -349,9 +349,8 @@ footer{
     text-align: center;
 }
 
-/* Mostrari de fonts */
-.mostrarifonts{
-    margin: 0 15%;
+.centrartexto h1{
+    font-size: 3rem;
 }
 
 .apartado{
@@ -359,29 +358,34 @@ footer{
     font-size: 2rem;
 }
 
+/* Mostrari de fonts */
+.mostrarifonts{
+    margin: 0 14%;
+}
+
 .tt1{
-    font-weight: bold;
-    line-height: 400%;
-    letter-spacing: 10px;
-    font-size: 2.5rem;
+    font-weight: bolder;    /* Negrita */
+    line-height: 400%;  /* Separaciön entre parrafos */
+    letter-spacing: 12px;   /* Separación entre letras */
+    font-size: 2.5rem;  /* Tamaño de letra */
 }
 
 .tt2{
-    font-weight: lighter;
+    font-weight: 700;
     line-height: 300%;
-    letter-spacing: 7px;
+    letter-spacing: 10px;
     font-size: 2rem;
 }
 
 .tt3{
     font-weight: normal;
     line-height: 250%;
-    letter-spacing: 6px;
+    letter-spacing: 7px;
     font-size: 1.5rem;
 }
 
 .ttp{
-    font-weight: normal;
+    font-weight: bold;
     line-height: 200%;
     letter-spacing: 4px;
     font-size: 1rem;
@@ -395,9 +399,28 @@ footer{
 /*------------*/
 
 /* Material icons botones y links */
-.materialiconboton{
+.materialicon{
+    margin: 0 14% 5%;
+}
+
+.midapeso{
     display: flex;
-    justify-content: center;    
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 0 0 2%;
+}
+
+.midapeso p{
+    display: flex;
+    align-items: center;
+}
+
+.botones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
 .boton1{
@@ -422,5 +445,25 @@ footer{
     border-color: rgb(196, 0, 0);
     background-color: rgb(255, 54, 54);
     transform: scale(1.05);
+}
+
+.boton2{
+    border-color: rgb(71, 0, 0);
+    padding: 10px 50px;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 13px;
+    color: rgb(71, 0, 0);
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    font-family: "Rammetto One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    transition: transform 0.1s linear;
+}
+
+.boton2:hover{
+    transform: scale(1.4);
 }
 /*--------------------------------*/

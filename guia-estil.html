@@ -14,7 +14,15 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=TASA+Orbiter:wght@400..800&display=swap" rel="stylesheet">
         <!-- Material Icons -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,0"/>
+        <style>
+            .iconot1 { font-size: 24px; }
+            .iconot2 { font-size: 48px; }
+            .iconot3 { font-size: 96px; }
+            .icono1 { font-variation-settings: "opsz" 24, "wght" 700, "FILL" 1; }   /* opsz = optical size/tamaño óptico */
+            .icono2 { font-variation-settings: "opsz" 48, "wght" 400, "FILL" 0; }   /* wght = weight/grosor del trazo */
+            .icono3 { font-variation-settings: "opsz" 96, "wght" 100, "FILL" 0; }   /* FILL = relleno */
+        </style>
     </head>
     <body>
         <!-- Navbar -->
@@ -31,23 +39,46 @@
             <header class="centrartexto">
                 <h1>Guía de estilos - Dadoteca</h1>
                 <p>Tipografía, iconos, botones y colores</p>
+                <br>
             </header>
             <!-- Mostrari de fonts -->
             <section class="mostrarifonts">
-                <h2 class="apartado">Tipografía</h2>
+                <h2 class="apartado">Mostrari de fonts y Escala tipogràfica</h2>
                 <h1 class="tt1">H1 - Bienvenido a Dadoteca</h1>
+                <h1>H1 - Bienvenido a Dadoteca</h1>
+                <br>
                 <h2 class="tt2">H2 - Colección de dados</h2>
+                <h2>H2 - Colección de dados</h2>
+                <br>
                 <h3 class="tt3">H3 - Novedades y lanzamientos</h3>
+                <h3>H3 - Novedades y lanzamientos</h3>
+                <br>
                 <p class="ttp">p - Explora nuestra colección de dados de todos los tamaños y estilos. Dados de 20 caras o dados temáticos, todos están aquí.</p>
+                <p>p - Explora nuestra colección de dados de todos los tamaños y estilos. Dados de 20 caras o dados temáticos, todos están aquí.</p>
+                <br>
                 <p class="alinear"><span class="material-symbols-outlined">ifl</span>Dado</p>
+                <p><span class="material-symbols-outlined">ifl</span>Dado</p>
             </section>
             <!-- Material icons botones y links -->
-            <section class="materialiconboton">
-                <a href="./index.html">
-                    <button class="boton1">
-                        <span class="material-symbols-outlined">ifl</span><strong>Cambia color y tamaño</strong>
-                    </button>
-                </a>
+            <section class="materialicon">
+                <h2 class="apartado">Material Icons</h2>
+                <div class="midapeso">
+                    <p><span class="material-symbols-outlined iconot1 icono1">ifl</span>Tamaño 24px, opsz 24, wght 700, FILL 1</p>
+                    <p><span class="material-symbols-outlined iconot2 icono2">ifl</span>Tamaño 48px, opsz 48, wght 400, FILL 0</p>
+                    <p><span class="material-symbols-outlined iconot3 icono3">ifl</span>Tamaño 96px, opsz 96, wght 100, FILL 0</p>
+                </div>
+                <div class="botones">
+                    <a href="./index.html">
+                        <button class="boton1">
+                            <span class="material-symbols-outlined">ifl</span><strong>Cambia color y tamaño</strong>
+                        </button>
+                    </a>
+                    <a href="./galeria.html">
+                        <button class="boton2">
+                            <span class="material-symbols-outlined iconot2">ifl</span><strong>Cambia tamaño</strong>
+                        </button>
+                    </a>
+                </div>
             </section>
         </div>
         <!-- Footer -->
