@@ -336,11 +336,55 @@ footer{
 
 /* Fallback obligatori */
 @supports not (animation-timeline: view()) {
-  .bloquesscroll img {opacity: 0; animation: fadeIn 1s ease forwards; }
+    .bloquesscroll img {opacity: 0; animation: fallbackobligatori 1s ease forwards; }
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(100px); }
-  to { opacity: 1; transform: translateY(0); }
+@keyframes fallbackobligatori {
+    from { opacity: 0; transform: translateY(100px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 /*----------------*/
+
+.centrartexto{
+    text-align: center;
+}
+
+/* Mostrari de fonts */
+.mostrarifonts{
+    margin: 0 15%;
+}
+
+.apartado{
+    border-bottom: 2px solid rgb(54, 0, 0);
+}
+
+.tt1{
+    font-weight: bold;
+    line-height: 400%;
+    letter-spacing: 10px;
+}
+
+.tt2{
+    font-weight: lighter;
+    line-height: 300%;
+    letter-spacing: 7px;
+}
+
+.tt3{
+    font-weight: normal;
+    line-height: 250%;
+    letter-spacing: 6px;
+}
+
+.ttp{
+    font-weight: normal;
+    line-height: 200%;
+    letter-spacing: 4px;
+}
+
+.alinear{
+    display: flex;
+    align-items: center;
+}
+
+/*------------*/
