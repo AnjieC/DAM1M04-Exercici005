@@ -460,10 +460,31 @@ footer{
     font-family: "Rammetto One", sans-serif;
     font-weight: 400;
     font-style: normal;
-    transition: transform 0.1s linear;
+    transition: transform 0.3s ease-out;
 }
 
 .boton2:hover{
     transform: scale(1.4);
 }
 /*--------------------------------*/
+
+/* Tabla Colores */
+.colores { 
+    margin: 0 14% 8%;
+}
+
+.colores table { 
+    width: 100%;
+    border-collapse: collapse; /* Quita el espacio entre bordes de celdas */
+    text-align: center;
+}
+
+.colores th, .colores td { 
+    border: 1px solid rgb(54, 0, 0); /* Bordes de cada celda de color oscuro */
+    padding: 8px; /* Espacio interno en celdas */
+}
+
+ .mostrarcolor { 
+    width: 50px; /* Ancho de la primera fila para mostrar el color */
+}
+/*---------------*/
