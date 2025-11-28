@@ -226,66 +226,6 @@ footer{
   opacity: 1;
 }
 
-@media (max-width: 768px) {
-    /* Tarjetas interactivas */
-    .tarjetas {
-        padding: 3%;
-        gap: 3%;
-        flex-direction: column;
-        align-items: center;
-    }
-    /* Lo que tendra todas las cartas */
-
-    /* Estado de carta normal */
-    .carta {
-        width: 65%;
-        
-        border-radius: 12px;
-        border: 10px solid rgb(255, 185, 185);
-        background-color: rgb(255, 185, 185);
-    }
-
-    /* Hover: escala, sombra y cambio de color */
-    .carta:hover {
-        transform: scale(1.05);
-        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.445);
-        background-color: rgb(165, 12, 12);
-        border: 10px solid rgb(165, 12, 12);
-    }
-
-    .carta img {
-        width: 100%;
-        display: block;
-    }
-
-    /* Imagen base inicialmente visible */
-    .dado-base {
-        opacity: 1;
-        transition: opacity 0.6s;
-        position: relative;
-        z-index: 1;
-    }
-
-    /* Imagen hover inicialmente oculta */
-    .dado-hover {
-        opacity: 0;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 2;
-        transition: opacity 0.4s;
-    }
-
-    /* Cambio de foto al hover, ocultar la base y mostrar la otra */
-    .carta:hover .dado-base {
-      opacity: 0;
-    }
-
-    .carta:hover .dado-hover {
-      opacity: 1;
-    }
-}
 /*--------------------------------*/
 
 /* Especifico cada transicion de cada carta */
@@ -303,6 +243,22 @@ footer{
 /* Carta 3 */
 #carta3{
     transition: transform 0.7s linear, box-shadow 0.7s linear;
+}
+
+@media (max-width: 768px) {
+    /* Tarjetas interactivas */
+    .tarjetas {
+        padding: 3% 0 10%;
+        gap: 25px;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* Lo que tendra todas las cartas */
+
+    /* Estado de carta normal */
+    .carta {
+        width: 65%;
+    }
 }
 /*------------------------------------------*/
 
@@ -328,6 +284,20 @@ footer{
 .opcmenusecundario:hover{
     color: rgb(196, 0, 0);
     letter-spacing: 2px;
+}
+
+@media (max-width: 768px) {
+    #menusecundario{
+        padding: 5%;
+        margin: 3% 0 20%;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .opcmenusecundario{
+        font-size: 21px;
+    }
 }
 /*-----------------*/
 
@@ -375,6 +345,21 @@ footer{
     50%  { transform: rotate(180deg); }
     100% { transform: rotate(360deg); }
 }
+
+@media (max-width: 768px) {
+    .parteloader{
+        display: flex;
+        justify-content: center;
+        margin: 15% 10% 0;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .loader{
+        width: 150px;
+        height: 49px;
+    }
+}
 /*--------*/
 
 /* Pieza animada principal */
@@ -405,6 +390,20 @@ footer{
     0%   { color: white; }
     50%  { color: rgb(255, 83, 83); }
     100% { color: rgb(105, 0, 0); }
+}
+
+@media (max-width: 768px) {
+    .partepiezaanimada{
+        margin: 0 0 5%;
+        overflow: hidden;
+        padding: 15% 10%;
+    }
+
+    @keyframes piezaanimada {
+        0%   { transform: scale(0.5); opacity: 1; }
+        50%  { transform: scale(1.1); opacity: 0.6; }
+        100% { transform: scale(0.5); opacity: 1; }
+    }
 }
 /*------------------------*/
 
@@ -443,6 +442,18 @@ footer{
     from { opacity: 0; transform: translateY(100px); }
     to { opacity: 1; transform: translateY(0); }
 }
+
+@media (max-width: 768px) {
+    .bloquesscroll{
+        gap: 30px;
+        margin-bottom: 40%;
+    }
+
+    .bloquesscroll img{
+        width: 85%;
+        animation-range: 0% 60%;   /* Cuando empieza y termina la animación segun la posición del bloque dentro de la pantalla */
+    }
+}
 /*----------------*/
 
 .centrartexto{
@@ -456,6 +467,16 @@ footer{
 .apartado{
     border-bottom: 2px solid rgb(54, 0, 0);
     font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+    .centrartexto h1{
+        font-size: 2rem;
+    }
+
+    .apartado{
+        font-size: 1rem;
+    }
 }
 
 /* Mostrari de fonts */
@@ -495,6 +516,40 @@ footer{
     display: flex;
     align-items: center;
     font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .mostrarifonts{
+        margin: 0 5%;
+    }
+
+    .tt1{
+        line-height: 250%;  /* Separaciön entre parrafos */
+        letter-spacing: 10px;   /* Separación entre letras */
+        font-size: 2rem;  /* Tamaño de letra */
+    }
+
+    .tt2{
+        line-height: 200%;
+        letter-spacing: 8px;
+        font-size: 1.5rem;
+    }
+
+    .tt3{
+        line-height: 150%;
+        letter-spacing: 5px;
+        font-size: 1.2rem;
+    }
+
+    .ttp{
+        line-height: 130%;
+        letter-spacing: 2px;
+        font-size: 1rem;
+    }
+
+    .alinear{
+        font-size: 1rem;
+    }
 }
 /*------------*/
 
@@ -566,6 +621,34 @@ footer{
 .boton2:hover{
     transform: scale(1.4);
 }
+
+@media (max-width: 768px) {
+    .materialicon{
+        margin: 15% 5% 0;
+    }
+
+    .midapeso{
+        flex-direction: column;
+        gap: 0px;
+        margin: 0;
+    }
+
+    .midapeso p{
+        font-size: 1.1rem;
+    }
+
+    .botones{
+        gap: 40px;
+    }
+
+    .boton2{
+        font-size: 1.5rem;
+    }
+
+    .boton2:hover{
+        transform: scale(1.1);
+    }
+}
 /*--------------------------------*/
 
 /* Tabla Colores */
@@ -586,5 +669,15 @@ footer{
 
  .mostrarcolor { 
     width: 50px; /* Ancho de la primera fila para mostrar el color */
+}
+
+@media (max-width: 768px) {
+    .colores { 
+        margin: 15% 5%;
+    }
+
+    .mostrarcolor {
+        width: 10px; /* Ancho de la primera fila para mostrar el color */
+    }
 }
 /*---------------*/
