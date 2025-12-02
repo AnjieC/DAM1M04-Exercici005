@@ -352,12 +352,12 @@ footer{
         justify-content: center;
         margin: 15% 10% 0;
         align-items: center;
-        gap: 30px;
+        gap: 15px;
     }
 
     .loader{
-        width: 150px;
-        height: 49px;
+        width: 100px;
+        height: 52px;
     }
 }
 /*--------*/
